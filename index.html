@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Zari task </title>
+        <meta charset="UTF-8">
+        <meta name = "description" content="Zari task">
+        <meta name = "kaywords" content="Zari task">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta anme="author" content="AHMED RASHED" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!-- ready -->
+        <!-- <div id="ready">
+            <h4 class="mb-4 px-2">Welcome to our Home..</h4>
+            <h1 class="px-3">Thank you for using Nagwa Education Platform <i class="fa fa-spinner fa-spin"></i></h1>            
+        </div> -->
+
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top bg-white p-0">
+            <div class="container-fluid container-xl w-special-95 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand"><img src="imgs/navbar/ZARI LOGO-02.png" alt="ZARI LOGO"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 py-3 py-lg-0 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why">Why Loyalty System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#how">How it work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sample">Sample</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#clients">Our Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Our Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                    </ul>
+                    <div class="custome d-flex justify-content-evenly align-items-center pb-4 pb-lg-0">
+                        <div class="currency py-2">
+                            <img id="img-select" src="imgs/navbar/Flag_of_the_United_States.svg.png" alt="united-states">
+                            <select class="py-1" id="currency" name="currency">
+                                <option selected value="dollar">
+                                    USD ($)
+                                </option>
+                                <option value="pound">
+                                    EGY (LE)
+                                </option>
+                                <option value="euro">
+                                    EURO (E)
+                                </option>
+                            </select>
+                        </div>
+                        <div class="language py-2">
+                            <i class="fa-solid fa-globe fs-6"></i>
+                            <select class="py-1" name="language">
+                                <option selected value="English">
+                                    En
+                                </option>
+                                <option value="Arabic">
+                                    Ar
+                                </option>
+                                <option value="French">
+                                    Fr
+                                </option>
+                            </select>
+                        </div>
+                        <a href="#" target="_blank" class="btn px-4">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header section -->
+        <header id="overview" class="overview position-relative">
+            <div class="vectors">
+                <img src="imgs/header/Group 1.png" class="position-absolute vector-right top-0 end-0"  alt="">
+                <img src="imgs/header/Group 2.png" class="position-absolute vector-left top-0 start-0"  alt="">
+                <img src="imgs/header/Vector 20.png" class="position-absolute w-25 mx-auto vector start-50 translate-middle"  alt="">
+            </div>
+            <div class="total-header bg-light min-vh-70 d-flex justify-content-center align-items-end">
+                <div class="container">
+                    <div class="row gx-0 gy-4 d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="caption">
+                                <h1 class="text-capitalize fw-bold mb-4">The first <span class="main-color">loyalty systems</span> provider in the Middle East.</h1>
+                                <p class="mb-4 py-1">Keep your customers loyal and guarantee your customer retention. The Complete Loyalty Solution
+                                    Everything you need to increase customer loyalty will be available now within one Application 
+                                </p>
+                                <div class="buttons">
+                                    <a class="btn main-btn py-2 px-4 me-3">Try it For Free</a>
+                                    <a class="btn second-btn py-2 px-4">Schedule A Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="img-header">
+                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#E4E4E4" d="M49,-76.3C63.3,-67.1,74.5,-53.1,77.4,-37.9C80.4,-22.8,75,-6.4,70,8.2C65,22.7,60.3,35.4,52.3,46.3C44.4,57.3,33.3,66.4,20.6,70.2C7.9,73.9,-6.4,72.3,-21.1,69.2C-35.8,66.1,-50.8,61.6,-59,51.5C-67.2,41.4,-68.7,25.7,-68.4,11.3C-68.1,-3,-66.1,-16.2,-60.8,-27.8C-55.5,-39.3,-46.8,-49.4,-36.2,-60.3C-25.5,-71.2,-12.7,-82.9,2.3,-86.5C17.4,-90.1,34.7,-85.6,49,-76.3Z" transform="translate(100 100)" />
+                                </svg>
+                                <img src="imgs/header/Gift Illustration.png" class="w-100" alt="gift">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- footer -->
+
+
+        <!-- js files -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
