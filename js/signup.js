@@ -9,7 +9,7 @@ $('#register').click(()=>{
         $('#alertSignup').removeClass('text-danger');
         addUser();
         setTimeout(() => {
-            window.location.replace('signIn.html')
+            window.location.replace('../signIn.html')
         }, 2000);
     }
     else if(isEmailExist()){
