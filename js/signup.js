@@ -9,8 +9,9 @@ $('#register').click(()=>{
         $('#alertSignup').removeClass('text-danger');
         addUser();
         setTimeout(() => {
+            $(location).prop('href', 'signIn.html')
             // window.location.replace('../signIn.html');
-            window.location.href = ("../signIn.html");
+            // window.location.href = ("../signIn.html");
         }, 2000);
     }
     else if(isEmailExist()){
