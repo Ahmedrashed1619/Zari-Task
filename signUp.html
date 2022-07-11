@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Zari task </title>
+        <meta charset="UTF-8">
+        <meta name = "description" content="Zari task">
+        <meta name = "kaywords" content="Zari task">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta anme="author" content="AHMED RASHED" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- section Sign Up -->
+
+        <section id="signup" class="sign d-flex justify-content-center align-items-center position-relative">
+            <div class="sign-victors">
+                <img src="imgs/header/Group 1.png" class="position-absolute top-0 end-0"  alt="">
+                <img src="imgs/header/Group 2.png" class="position-absolute top-0 start-0"  alt="">
+                <img src="imgs/Sign Up/Group 3.png" class="position-absolute bottom-0 end-0"  alt="">
+            </div>
+            <div class="w-90 py-2">
+                <div class="row g-0">
+                    <div class="col-lg-6">
+                        <div class="img-sign pt-3 px-2">
+                            <div class="logo">
+                                <img src="imgs/Sign Up/1.png" alt="Zari logo">
+                            </div>
+                            <div class="sign-caricature mt-5 pt-4 px-4">
+                                <img src="imgs/Sign Up/Sign up-amico 1.png" class="" alt="sign-caricature">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="sign-form">
+                            <h2 class="text-center mb-2">Sign Up</h2>
+
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" required class="form-control mt-2 mx-auto bg-white" placeholder="Enter your name ..">
+                            <div id="alertName" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">consists of a capital letter and 2-15 small letters</div>
+                            
+                            <label for="phone">Phone</label>
+                            <input id="phone" type="tel" name="phone" required class="form-control mt-2 mx-auto bg-white" placeholder="Enter your phone number">
+                            <div id="alertPhone" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">consists of (010 / 011 / 012 / 015) followers of 8 numbers. <br> (002) optional.</div>
+
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" required class="form-control mt-2 mx-auto bg-white" placeholder="email@gmail.com">
+                            <div id="alertEmail" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">consists of 3-15 characters and end with (@"gmail".com)...</div>
+
+                            <label for="password">Password</label>
+                            <input id="password" type="password" name="password" required class="form-control mt-2 mx-auto bg-white" placeholder="********">
+                            <div id="alertPassword" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">entre a valid password " Minimum eight characters, at least one letter and one number "</div>
+
+                            <label for="repassword">Confirm Password</label>
+                            <input id="repassword" type="password" name="repassword" required class="form-control mt-2 mx-auto bg-white" placeholder="********">
+                            <div id="alertRePass" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">entre The same Password </div>
+                            
+                            <p id="alertSignup" class="fs-6 mb-0 mt-3 w-75 text-center mx-auto"></p>
+                            <div class="text-center mt-4 mb-3"><a id="register" class="btn main-btn py-2 px-4 w-60 mx-auto text-white">Register</a></div>
+
+                            <div class="mb-2 w-90 mx-auto text-center d-flex justify-content-center align-items-center">
+                                    <span class="main-color semi-bold me-2">OR Sign up with</span>
+                                    <div class="imgs">
+                                        <img src="imgs/Sign Up/facebook icon.png" alt="facebook">
+                                        <img src="imgs/Sign Up/Google icon.png" alt="google">
+                                        <img src="imgs/Sign Up/Apple Icon.png" alt="apple">
+                                    </div>
+                            </div>
+
+                            <div class="already-have text-center w-90 mx-auto">
+                                <p>Already have an account ? <a href="signIn.html"> Sign in </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- js files -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/signup.js"></script>
+
+    </body>
+</html>

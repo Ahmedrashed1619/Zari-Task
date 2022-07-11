@@ -125,29 +125,18 @@ i{
     color: var(--mainColor) !important;
     border: 1px solid var(--mainColor);
 }
-/* .custome .currency, .custome .language{
-    transition: all 0.25s;
-} */
 .custome .currency img{
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
-/* .custome .currency:hover, .custome .language:hover{
-    background-color: var(--mainColor);
-    color: #fff;
-} */
 select{
     color: var(--mainColor);
     border: none;
     outline: none;
     background-color: transparent;
     cursor: pointer;
-    /* transition: all 0.25s; */
 }
-/* .custome .currency:hover select, .custome .language:hover select{
-    color: #fff !important;
-} */
 option{
     font-size: 13px;
     font-weight: 500;
@@ -196,7 +185,6 @@ option{
     margin-top: 50px;
 }
 .total-header{
-    /* background-color: #D9D9D9; */
     padding-top: 7rem;
 }
 .min-vh-70{
@@ -224,7 +212,6 @@ option{
 .main-btn:hover{
     background-color: transparent;
     color: var(--mainColor);
-    /* border: 1px solid var(--mainColor); */
 }
 .second-btn{
     background-color: transparent;
@@ -234,7 +221,6 @@ option{
 .second-btn:hover{
     background-color: var(--mainColor);
     color: #fff;
-    /* border: none; */
 }
 .caption, .img-header{
     position: relative;
@@ -315,6 +301,102 @@ option{
 }
 
 
+/* sign up & sign in pages */
+.sign{
+    min-height:100vh;
+    background-color: #000;
+}
+.w-90{
+    width: 90%;
+    margin: auto;
+}
+.sign .img-sign{
+    position: relative;
+    z-index: 2;
+}
+.sign .img-sign .sign-caricature img{
+    max-width: 75%;
+    min-width: 350px;
+}
+.sign .img-sign .logo img{
+    width: 125px;
+    height: 110px;
+}
+.sign-form{
+    position: relative;
+    z-index: 2;
+    background-color: #ECECEC;
+    border-radius: 20px;
+    padding: 30px 40px 10px;
+}
+.sign-form h2{
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 45px;
+    color: #000;
+    font-family: 'Montserrat';
+    text-transform: capitalize;
+}
+.sign-form label{
+    font-weight: 600;
+    margin-top: 1.25rem;
+}
+.sign-form input{
+    border-radius: 8px;
+}
+.sign-form .form-control:focus{
+    box-shadow: none;
+    border-color: var(--mainColor) !important;
+}
+.sign-form input::placeholder{
+    color: hsla(0, 0%, 44%, 0.5);
+    font-weight: 500;
+    letter-spacing: 0;
+}
+.sign-form .alert{
+    color:rgba(0, 0, 0, 0.850);
+    font-size: 13px;
+    display: none;
+}
+.sign-form a{
+    border-radius: 10px;
+    font-weight: bold;
+}
+.sign-form a:hover{
+    color: var(--mainColor) !important;
+}
+.sign-form .semi-bold{
+    font-weight: 600;
+}
+.sign-form .imgs img{
+    width: 35px;
+    cursor: pointer;
+}
+.w-60{
+    width: 60%;
+}
+.sign-form .already-have p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.sign-form .already-have p a{
+    text-decoration: none;
+    color: var(--mainColor);
+}
+
+/* Responsive sign up & sign in pages */
+
+@media screen and (min-width: 992px){
+    .sign .img-sign .sign-caricature img{
+        min-width: 400px;
+    }
+}
+@media screen and (max-width: 992px){
+    .sign .img-sign, .sign .sign-form{
+        width: 85%;
+        margin: auto;
+    }
+}
 
 
 
