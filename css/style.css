@@ -253,8 +253,8 @@ option{
         margin-right: auto;
         margin-left: auto;
     }
-    .vectors{
-        display: none;
+    .vectors, .sign-victors{
+        display: none !important;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1400px){
