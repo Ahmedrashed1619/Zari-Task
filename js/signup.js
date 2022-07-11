@@ -10,7 +10,7 @@ $('#register').click(()=>{
         addUser();
         setTimeout(() => {
             // window.location.replace('../signIn.html');
-            window.location.href = ("signIn.html");
+            window.location.href = ("../signIn.html");
         }, 2000);
     }
     else if(isEmailExist()){
