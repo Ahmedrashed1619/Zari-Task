@@ -28,7 +28,6 @@ $('#register').click(()=>{
 
 // Check data in local storage
 export let users;
-// export JSON.parse(localStorage.getItem('ZariUsers'));
 if (JSON.parse(localStorage.getItem('ZariUsers')) != null)
 {
     users = JSON.parse(localStorage.getItem('ZariUsers'));

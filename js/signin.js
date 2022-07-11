@@ -1,17 +1,6 @@
 
+
 import { users } from "./signup.js";
-
-// Check data in local storage
-// let users;
-// if (JSON.parse(localStorage.getItem('ZariUsers')) != null)
-// {
-//     users = JSON.parse(localStorage.getItem('ZariUsers'));
-// }
-// else
-// {
-//     users = [];
-// }
-
 
 // ...verification...
 let login = document.getElementById('enter-page')
