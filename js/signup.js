@@ -9,7 +9,8 @@ $('#register').click(()=>{
         $('#alertSignup').removeClass('text-danger');
         addUser();
         setTimeout(() => {
-            $(location).prop('href', 'signIn.html')
+            $(location).prop('href', 'signIn.html');
+            $(location).reload();
         }, 2000);
     }
     else if(isEmailExist()){
@@ -27,7 +28,9 @@ $('#register').click(()=>{
 
 
 // Check data in local storage
+
 export let users;
+
 if (JSON.parse(localStorage.getItem('ZariUsers')) != null)
 {
     users = JSON.parse(localStorage.getItem('ZariUsers'));
@@ -133,7 +136,7 @@ function isEmailExist(){
 
  let checkPass;
  function validUserPass(){
-    let regexPass =/^(?:[0-9]+[a-zA-Z]|[a-zA-Z]+[0-9])(?:[a-zA-Z0-9 ]{6,})$/;
+    let regexPass =/^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+){8,}$/;
     checkPass = regexPass.test($('#password').val());
     if(checkPass == true)
     {
