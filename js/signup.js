@@ -10,8 +10,6 @@ $('#register').click(()=>{
         addUser();
         setTimeout(() => {
             $(location).prop('href', 'signIn.html')
-            // window.location.replace('../signIn.html');
-            // window.location.href = ("../signIn.html");
         }, 2000);
     }
     else if(isEmailExist()){
@@ -29,7 +27,8 @@ $('#register').click(()=>{
 
 
 // Check data in local storage
-let users;
+export let users;
+// export JSON.parse(localStorage.getItem('ZariUsers'));
 if (JSON.parse(localStorage.getItem('ZariUsers')) != null)
 {
     users = JSON.parse(localStorage.getItem('ZariUsers'));
