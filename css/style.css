@@ -19,11 +19,13 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #F5F5F5;
+    
     /* background-color: var(--mainColor); */
     /* overflow: hidden; */
 }
 
-i{
+i, img{
     cursor: pointer;
 }
 
@@ -95,8 +97,8 @@ i{
     color: var(--mainColor) !important;
 }
 .navbar-collapse{
-    background-color: rgba(0, 0, 0, 0.922);
-    transition: all 0.3s;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.5s;
 }
 .custome div{
     border: 1px solid var(--mainColor);
@@ -121,6 +123,21 @@ i{
     box-shadow: 0px 4px 6px rgba(147, 147, 147, 0.26);
     transition: all 0.25s;
 }
+.custome .currency, .custome .language, .language i{
+    transition: all 0.25s;
+}
+.custome .currency:hover, .custome .language:hover{
+    background-color: var(--mainColor);
+}
+.custome .currency:hover select, .custome .language:hover select{
+    color: #fff !important;
+}
+.custome .currency:hover option[value], .custome .language:hover option[value]{
+    color: var(--mainColor) !important;
+}
+.custome .language:hover.language i{
+    color: #fff !important;
+}
 .custome a:hover{
     background-color: transparent;
     color: var(--mainColor) !important;
@@ -141,10 +158,12 @@ select{
     outline: none;
     background-color: transparent;
     cursor: pointer;
+    transition: all 0.25s;
 }
 option{
     font-size: 13px;
     font-weight: 500;
+    transition: all 0.25s;
 }
 
 /* Responsive navbar */
@@ -229,7 +248,7 @@ option{
 }
 .caption, .img-header{
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 .img-header svg{
     position: absolute;
@@ -240,6 +259,10 @@ option{
     height:24rem;
     position: relative;
     z-index: 2;
+    transition: all 0.5s;
+}
+.img-header img:hover{
+    transform: scale(1.1,1.1);
 }
 .vector{
     top: 38%;
@@ -408,19 +431,27 @@ option{
 
 /* section why layout */
 
+.layout-container .img-layout{
+    position: relative;
+}
 .layout-container .img-layout img{
     max-width: 100%;
-    min-width: 280px;
+    min-width: 285px;
+    transition: all 0.5s;
+}
+.layout-container .img-layout img:hover{
+    transform: scale(1.1,1.1);
 }
 .layout{
-    border-left: 1px dashed rgba(255, 255, 255, 0.750);
-    height: 170px;
+    border-left: 1px dashed rgba(255, 255, 255, 0.75);
+    height: 180px;
     transition: all 0.3s;
 }
 .layout:hover{
     border-left-color: var(--mainColor);
 }
 .last-layout , .third-layout{
+    height: 150px;
     border: none !important;
 }
 .special-layout{
@@ -431,6 +462,7 @@ option{
     color: #fff;
     line-height: 1.25;
     width: 80%;
+    text-transform: capitalize;
 }
 .layout i{
     padding: 25px;
@@ -458,13 +490,16 @@ option{
 
 @media screen and (min-width: 992px) and (max-width: 1400px){
     .layout{
-        height: 220px !important;
+        height: 240px !important;
     }
     .special-layout{
-        height: 140px !important;
-    }
-    .third-layout, .last-layout{
         height: 160px !important;
+    }
+    .last-layout , .third-layout{
+        height: 200px !important;
+    }
+    .layout p{
+        width: 70%;
     }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
@@ -476,7 +511,7 @@ option{
         margin: auto;
     }
     .layout-container .col-lg-6{
-        width: 45%;
+        width: 40%;
         margin: auto;
     }
 }
@@ -494,24 +529,166 @@ option{
     }
     .layout , .special-layout{
         height: fit-content;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
     }
     .third-layout{
-        border-left: 1px dashed rgba(255, 255, 255, 0.750) !important;
+        border-left: 1px dashed rgba(255, 255, 255, 0.75) !important;
         transition: all 0.3s;
     }
     .third-layout:hover{
         border-left-color: var(--mainColor) !important;
     }
+    .layout h5{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
     .layout p{
         width: 70%;
-        margin: auto;
     }
 }
 
+/* features section */
 
+.main-title p{
+    font-size: 15px;
+    width: 80%;
+    font-weight: 500;
+    line-height: 20px;
+    color: #6F6F6F;
+}
+.feature{
+    box-shadow: 0px 0px 8px rgba(153, 153, 153, 0.15);
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.feature-img{
+    width: 110px;
+    height: 110px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+}
+.feature-img img{
+    width: 55px;
+    height: 55px;
+    transition: all 0.5s;
+}
+.feature-img:hover img{
+    transform: scale(1.2,1.2);
+}
+.feature-1{
+    background: linear-gradient(155.11deg, #99F2C8 15.6%, #1F4037 84.04%);
+}
+.feature-2{
+    background: linear-gradient(155.11deg, #FFDC5E 7.8%, #FFB56E 86.52%);
+}
+.feature-3{
+    background: linear-gradient(155.11deg, #FFA5AB 14.54%, #A53860 91.49%);
+}
+.feature-4{
+    background: linear-gradient(152.75deg, #F9EA8F 17.43%, #9FD8C4 85.31%);
+}
+.feature-5{
+    background: linear-gradient(155.11deg, #8EECF5 13.48%, #A3C4F3 79.79%);
+}
+.feature-6{
+    background: linear-gradient(155.11deg, #FFD6FF 14.18%, #C8B6FF 84.75%);
+}
 
+.feature p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6F6F6F;
+}
+.features .vectors img{
+    top: 20%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75%;
+}
 
+/* Responsive features section */
+
+@media screen and (max-width: 992px){
+    .features-title p{
+        width: 100% !important;
+    }
+}
+
+/* and (work , market)  section how it work & section sample */
+
+@media screen and (max-width: 600px){
+    .feature, .work, .market{
+        width: 80%;
+        margin-right:auto ;
+        margin-left:auto ;
+    }
+}
+
+/* how it work section */
+
+.w-85{
+    width: 85%;
+}
+.work p{
+    color: #6F6F6F;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.work img{
+    transition: all 0.5s;
+}
+.work img:hover{
+    transform: scale(1.15,1.15);
+}
+
+/* sample section */
+
+.market{
+    border-radius: 10px;
+    position: relative;
+}
+.market .img-market{
+    background: #FFFFFF !important;
+    border: 1px solid rgba(153, 153, 153, 0.15);
+    box-shadow:0px 0px 8px rgba(153, 153, 153, 0.15);
+    border-radius: 8px;
+    height: 260px;
+    overflow: hidden;
+}
+.market .img-market img{
+    width: 90%;
+    transition: all 0.5s;
+}
+.market .img-market:hover img{
+    transform: scale(1.15,1.15);
+}
+.market h4{
+    text-transform: capitalize;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.market h4:hover{
+    color: var(--mainColor) !important;
+}
+
+/*Responsive sample section */
+
+@media screen and (max-width: 992px){
+    .market .img-market img{
+        width: 250px;
+    }
+}
 
 
 
