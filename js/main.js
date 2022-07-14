@@ -38,3 +38,7 @@ currency.addEventListener('click' , function(){
         img.setAttribute('src' , 'imgs/navbar/Flag_of_Europe.svg.png');
     };
 })
+
+
+
+

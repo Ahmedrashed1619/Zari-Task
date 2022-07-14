@@ -347,9 +347,13 @@ option{
 .sign .img-sign .sign-caricature img{
     max-width: 75%;
     min-width: 350px;
+    transition: all 0.5s;
+}
+.sign .img-sign .sign-caricature img:hover{
+    transform: scale(1.1,1.1);
 }
 .sign .img-sign .logo img{
-    width: 125px;
+    width: 120px;
     height: 110px;
 }
 .sign-form{
@@ -550,11 +554,15 @@ option{
 
 /* features section */
 
+.main-title h2{
+    letter-spacing: 0px;
+}
 .main-title p{
     font-size: 15px;
     width: 80%;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 18px;
+    letter-spacing: 0px;
     color: #6F6F6F;
 }
 .feature{
@@ -581,7 +589,7 @@ option{
     height: 55px;
     transition: all 0.5s;
 }
-.feature-img:hover img{
+.feature:hover img{
     transform: scale(1.2,1.2);
 }
 .feature-1{
@@ -678,7 +686,7 @@ option{
     transition: all 0.5s;
     cursor: pointer;
 }
-.market h4:hover{
+.market:hover.market h4{
     color: var(--mainColor) !important;
 }
 
@@ -690,6 +698,166 @@ option{
     }
 }
 
+/* clients section */
+.bg-black-9{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 1;
+}
+.botder-top-none{
+    border-top: none !important;
+}
+.border-right-none{
+    border-right: none !important;
+}
+.group{
+    min-height: 140px;
+    min-width: 143.5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+    border-right: 1px dashed #fff;
+    border-top: 1px dashed #fff;
+    transition: all 0.25s;
+}
+.group-first{
+    min-width: 110px !important;
+}
+.group-last{
+    min-height: 0px !important;
+}
+.group:hover{
+    border-right-color: var(--mainColor);
+    border-top-color: var(--mainColor);
+}
+.dashboard-imgs .img{
+    background-color: #fff;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translate(50%,-50%);
+    cursor: pointer;
+    overflow: hidden;
+}
+.dashboard-imgs .img:hover img{
+    transform: scale(1.2,1.2);
+}
+.bg-blue{
+    background-color: blue !important;
+}
+.dashboard-imgs .img img{
+    width: 75%;
+    transition: all 0.5s;
+}
+.fixed-width-img{
+    width: 45px !important;
+}
+
+/* Responsive clients section */
+
+@media screen and (max-width: 1465px){
+    .bg-black-9{
+        overflow-x: scroll;
+    }
+}
+
+/* testimonials section */
+.testimonials .vectors{
+    z-index: -1 !important;
+}
+.carousel-indicators{
+    height: 70% !important;
+    max-height: 50vh !important;
+}
+.indicators-height{
+    height: 50px !important;
+}
+.indicator-item{
+    padding: 15px;
+    width: fit-content !important;
+    height: fit-content !important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.indicator-item img.life{
+    width: 75%;
+    height: 100%;
+}
+.indicator-item img.attraction{
+    width: 75%;
+    height: 100%;
+}
+.indicator-item img.spa{
+    width: 90%;
+    height: 100%;
+}
+.carousel-indicators .indicator-item [data-bs-target]{
+    background-color: transparent !important;
+    text-indent: 0 !important;
+    transition: all 0.25s !important;
+    opacity: 1 !important;
+}
+.carousel-control-prev{
+    width: 3% !important;
+    height: 3% !important;
+    top: 75% !important;
+    left: 0 !important;
+    padding: 30px !important;
+    background-color: var(--mainColor) !important;
+    border-radius: 50%;
+    z-index: 5;
+}
+.carousel-control-next{
+    width: 3% !important;
+    height: 3% !important;
+    top: 75% !important;
+    right: 0 !important;
+    padding: 30px !important;
+    background-color: var(--mainColor) !important;
+    border-radius: 50%;
+    z-index: 5;
+}
+.carousel-inner{
+    width: 75% !important;
+    margin: auto !important;
+    overflow: hidden !important;
+}
+.carousel-item h3{
+    width: 85% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    margin-bottom: 12px !important;
+}
+.carousel-item blockquote{
+    width: 85% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    color: #6F6F6F !important;
+    text-align: center !important;
+    font-size: 18px !important;
+}
+.carousel-indicators .indect [data-bs-target]{
+    background-color: #6F6F6F !important;
+}
+.carousel-indicators .indect .active{
+    background-color: var(--mainColor) !important;
+    width: 50px !important;
+}
+.top--25{
+    top: -25%;
+}
+.bottom--25{
+    bottom: -25%;
+}
 
 
 
