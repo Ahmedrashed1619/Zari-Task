@@ -93,6 +93,10 @@
             </div>
         </nav>
 
+        <!-- back to top -->
+        <!-- <a id="topBtn" class="position-fixed bottom-0 end-0 translate-middle text-white"><i class="fa-solid fa-chevron-up fs-3 p-2 main-bg rounded-circle"></i></a> -->
+
+
         <!-- header section -->
         <header id="overview" class="overview position-relative">
             <div class="vectors">
@@ -649,12 +653,12 @@
         </section>
 
         <!-- Testimonials section -->
-        <section id="testimonials" class="testimonials position-relative py-4">
+        <section id="testimonials" class="testimonials position-relative py-5 min-vh-100">
             <div class="vectors">
-                <img src="imgs/testimonials/Group 14.png" class="position-absolute  start-0 top--25"  alt="vector">
-                <img src="imgs/testimonials/Group 15.png" class="position-absolute start-0 bottom--25"  alt="vector">
+                <img src="imgs/testimonials/Group 14.png" class="position-absolute  start-0 top-0"  alt="vector">
+                <img src="imgs/testimonials/Group 15.png" class="position-absolute start-0 bottom-0"  alt="vector">
             </div>
-            <div class="container">
+            <div class="container position-relative">
                 <div class="row gx-0">
                     <div class="col-12">
                         <div class="main-title text-center py-3 w-85 mx-auto mb-2">
@@ -662,25 +666,48 @@
                             <p class="mx-auto">What our clients Say about us</p>
                         </div>
                     </div>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
-                        <div class="carousel-indicators position-static d-flex justify-content-between w-75 mx-auto mt-2">
-                            <div class="indicator-item align-self-start bg-white">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+
+                        <div class="carousel-indicators position-static d-flex justify-content-between mt-2">
+                            <div class="indicator-item indicators-sides align-self-start bg-white">
                                 <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="life"  aria-label="Slide 1" src="imgs/testimonials/logo 30.png" alt="">
                             </div>
                             <div class="indicator-item align-self-end bg-black">
                                 <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="attraction" aria-label="Slide 2" src="imgs/testimonials/logo 31.png" alt="">
                             </div>
-                            <div class="indicator-item align-self-center bg-white">
+                            <div class="indicator-item indicator-center align-self-center bg-white">
                                 <img type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active spa" aria-label="Slide 3" src="imgs/testimonials/logo lara spa done 2.png" alt="">
                             </div>
                             <div class="indicator-item align-self-end bg-white">
                                 <img type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="attraction" aria-label="Slide 4" src="imgs/testimonials/logo 32.png" alt="">
                             </div>
-                            <div class="indicator-item align-self-start bg-black">
+                            <div class="indicator-item indicators-sides align-self-start bg-black">
                                 <img type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="life" aria-label="Slide 5" src="imgs/testimonials/logo1 2.png" alt="">
                             </div>
                         </div>
-                        <div class="carousel-inner py-3">
+                        
+                        <div class="svgs">
+                            <svg height="50" width="50" class="position-absolute top-0 start-0">
+                                <circle cx="10" cy="10" r="6" stroke="" stroke-width="3" fill="#FFA8A5BF"/>
+                            </svg>
+                            <svg height="50" width="50" class="position-absolute top-50 start-0">
+                                <circle cx="10" cy="10" r="6" stroke="" stroke-width="3" fill="#AFCDFBBF"/>
+                            </svg>
+                            <svg height="50" width="50" class="left-svg position-absolute">
+                                <circle cx="20" cy="20" r="10" stroke="" stroke-width="3" fill="#F99746BF"/>
+                            </svg>
+                            <svg height="50" width="50" class="position-absolute top-0 end-0">
+                                <circle cx="10" cy="10" r="6" stroke="" stroke-width="3" fill="#FFA8A5BF"/>
+                            </svg>
+                            <svg height="50" width="50" class="position-absolute top-50 end-0">
+                                <circle cx="10" cy="10" r="6" stroke="" stroke-width="3" fill="#AFCDFBBF"/>
+                            </svg>
+                            <svg height="50" width="50" class="right-svg position-absolute">
+                                <circle cx="20" cy="20" r="10" stroke="" stroke-width="3" fill="#F99746BF"/>
+                            </svg>
+                        </div>
+
+                        <div class="carousel-inner pt-5">
                             <div class="carousel-item">
                                 <h3>Life Leonge</h3>
                                 <blockquote> <i class="fa-solid fa-quote-left"></i> Aenean sit amet est orci. Aenean at nisi eget nulla lobortis commodo. Nam eget lorem in ex aliquam dapibus. <i class="fa-solid fa-quote-right"></i> </blockquote>
@@ -702,11 +729,12 @@
                                 <blockquote> <i class="fa-solid fa-quote-left"></i> Fusce euismod eget nulla a tempus. Pellentesque in varius metus. Fusce iaculis cursus ante, vel vestibulum dui sagittis vitae. <i class="fa-solid fa-quote-right"></i> </blockquote>
                             </div>
                         </div>
+
                         <div class="carousel-indicators position-static indicators-height">
-                            <div class="indect pt-2">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                            <div id="indicators" class="indect">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="change" aria-current="true" aria-label="Slide 3"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                             </div>
@@ -720,10 +748,39 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
                 </div>
             </div>
         </section>
+
+        <section id="numbers" class="numbers">
+            <div class="numbers-bg py-5 d-flex justify-content-center align-items-center">
+                <div class="container-fluid text-center text-white">
+                    <div class="row gy-3">
+                        <div class="col-lg-4">
+                            <div class="count py-5 d-flex justify-content-center align-items-center flex-column">
+                                <span class="fs-2 mb-5">+ <span class="fs-2 counter" data-target="250"></span></span>
+                                <h2 class="text-capitalize">Our Clients</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="count py-5 d-flex justify-content-center align-items-center flex-column">
+                                <span class="fs-2 mb-5">+ <span class="fs-2 counter" data-target="32"></span> K</span>
+                                <h2 class="text-capitalize">No. of seals collected</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="count py-5 d-flex justify-content-center align-items-center flex-column">
+                                <span class="fs-2 mb-5">+ <span class="fs-2 counter" data-target="14"></span> K</span>
+                                <h2 class="text-capitalize">customers Gifts</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
 
 
 
@@ -749,7 +806,6 @@
         <!-- js files -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
 
     </body>
