@@ -2,7 +2,7 @@
 // loading to init...........
 
 $(document).ready(function(){
-    $('#ready').fadeOut(3000, function(){
+    $('#ready').fadeOut(2000, function(){
         $('body').css('overflow','visible');
         $('#topBtn').css('display' , 'none')
     })
@@ -44,7 +44,7 @@ $('.navbar .navbar-toggler').click(()=>{
 // change flag for currency when click 
 
 let currency = document.getElementById('currency');
-let img = document.getElementById('img-select')
+let img = document.getElementById('img-select');
 currency.addEventListener('click' , function(){
     if(this.value == 'dollar'){
         img.removeAttribute('src');
@@ -150,15 +150,5 @@ function validUserEmailSubscribe(){
 $('#emailSubscribe').on('input' , function(){
     validUserEmailSubscribe();
 })
-
-
-
-
-
-
-
-
-
-
 
 
