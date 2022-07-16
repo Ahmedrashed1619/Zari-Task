@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title> Zari task </title>
+        <meta charset="UTF-8">
+        <meta name = "description" content="Zari task">
+        <meta name = "kaywords" content="Zari task">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta anme="author" content="AHMED RASHED" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top bg-white p-0">
+            <div class="container-fluid container-xl w-special-95 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand"><img src="imgs/navbar/ZARI LOGO-02.png" alt="ZARI LOGO"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 py-3 py-lg-0 fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#overview">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#why">Why Loyalty System</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#how">How it work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#sample">Sample</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#clients">Our Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#testimonials">Our Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link checked" href="index.html#pricing">Pricing</a>
+                        </li>
+                    </ul>
+                    <div class="custome d-flex justify-content-evenly align-items-center pb-4 pb-lg-0">
+                        <div class="currency py-2">
+                            <img id="img-select" src="imgs/navbar/Flag_of_the_United_States.svg.png" alt="united-states">
+                            <select class="py-1" id="currency" name="currency">
+                                <option selected value="dollar">
+                                    USD ($)
+                                </option>
+                                <option value="pound">
+                                    EGY (LE)
+                                </option>
+                                <option value="euro">
+                                    EURO (E)
+                                </option>
+                            </select>
+                        </div>
+                        <div class="language py-2">
+                            <i class="fa-solid fa-globe fs-6"></i>
+                            <select class="py-1" name="language">
+                                <option selected value="English">
+                                    En
+                                </option>
+                                <option value="Arabic">
+                                    Ar
+                                </option>
+                                <option value="French">
+                                    Fr
+                                </option>
+                            </select>
+                        </div>
+                        <a href="signIn.html" target="_blank" class="btn px-4">Sign in</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="check-out py-5 d-flex justify-content-center align-items-center ">
+            <div class="container pt-5">
+                <div class="row gy-5">
+                    <div class="col-lg-8">
+                        <div class="caption-check">
+                            <h2 class="main-color semi-bold mb-5"><i class="fa-solid fa-angle-right"></i> Checkout</h2>
+                            <p class="fw-bold fs-5">Payment Method</p>
+                            <div class="inputs-radio d-flex justify-content-between align-items-center mt-3">
+                                <div class="radio-input py-3 px-1">
+                                    <input type="radio" name="Payment" checked id="master" value="Master Card">
+                                    <label for="master" class="fw-bold"><img id="img1" src="imgs/check-out/Master card Icon.png" class="mx-3" alt="Master card">Master Card</label>
+                                </div>
+                                <div class="radio-input py-3 px-1">
+                                    <input type="radio" name="Payment" id="Mada" value="Mada(مدى)">
+                                    <label for="Mada" class="fw-bold"><img id="img2" src="imgs/check-out/Layer 0.png" class="mx-3 " alt="Mada(مدى)">Mada(مدى)</label>
+                                </div>
+                                <div class="radio-input py-3 px-1">
+                                    <input type="radio" name="Payment" id="bank" value="Bank Transfer">
+                                    <label for="bank" class="fw-bold"><img id="img3" src="imgs/check-out/bank-transfer 1.png" class="mx-3 w-25" alt="Bank Transfer">Bank Transfer</label>
+                                </div>
+                            </div>
+                            <div class="inputs-info">
+                                <div class="name-card">
+                                    <label for="nameCard" class="fs-5 mt-4">Name on card</label>
+                                    <input id="nameCard" type="text" name="name" required class="form-control mt-2 mx-auto bg-white">
+                                    <div id="alertNameCard" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">enter your first name & last name Each of them isn't more than 12 characters</div>
+                                </div>
+                                <div class="number-card position-relative">
+                                    <label for="number" class="fs-5 mt-4">Card number</label>
+                                    <input id="number" type="number" name="number" required class="form-control mt-2 mx-auto bg-white">
+                                    <div id="alertNumberCard" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">enter your card numbers consists of 16 digits</div>
+                                    <img id="img-input" src="imgs/check-out/Master card Icon.png" alt="img-input">
+                                </div>
+                                <div class="cv-exp row">
+                                    <div class="col-6 date">
+                                        <label for="date" class="fs-5 mt-4">Expiration date</label>
+                                        <input id="date" type="datetime" name="date" required class="form-control mt-2 mx-auto bg-white" placeholder="MM/YY">
+                                        <div id="alertdateCard" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">enter Expiration date (month/year) for your card so it isn't more than 2028 & not less than 2023</div>
+                                    </div>
+                                    <div class="col-6 cvv">
+                                        <label for="passwordCvv" class="fs-5 mt-4">CVV</label>
+                                        <input id="passwordCvv" type="password" name="password" required class="form-control mt-2 mx-auto bg-white" placeholder="123">
+                                        <div id="alertpasswordCvvCard" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-0">enter the last three digits of your crrdit card password</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center w-50 mx-auto mt-5">
+                            <p id="alertConfirm" class="fs-6 mb-2 w-75 text-center mx-auto"></p>
+                            <a id="confirm" class="btn main-btn text-capitalize semi-bold">Confirm Payment</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="price">
+                            <h4 class="name">Your Plan is <span id="nameChoose">Experience Plan</span></h4>
+                            <div id="pricing-show" class="cont-pricing">
+                                <h6 class="salary"><span class="fs-1 main-color">55 $</span> /Month or 549 $ /Year</h6>
+                                <h4><span class="main-color">Unlimited</span> card design</h4>
+                                <h4><span class="main-color">Unlimited</span> Location</h4>
+                                <h4><span class="main-color">Unlimited</span> Subusers</h4>
+                                <h4>Card Customizations</h4>
+                                <h4 class="through">Unique customer Enroll</h4>
+                                <h4 class="through">Data Export</h4>
+                                <h4 class="through">Push Notifications</h4>
+                            </div>
+                            <a href="index.html#pricing" class="btn py-2 px-4">Change My Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- js files -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script type="module" src="js/check.js"></script>
+
+    </body>
+</html>

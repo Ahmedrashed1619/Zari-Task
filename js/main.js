@@ -11,35 +11,30 @@
 
 // when click event on topbtn & toggle 
 
-// $('#topBtn').click(function(){
-//     $('html , body').animate({scrollTop : 0}, 500);
-// })
+$('#topBtn').click(function(){
+    $('html , body').animate({scrollTop : 0}, 500);
+})
 
-// $(window).scroll(function(){
+$('#btnTopFooter').click(function(){
+    $('html , body').animate({scrollTop : 0}, 500);
+})
 
-//     let whyOffset = $('#why').offset().top;
-//     let contactOffset = $('#contact').offset().top;
+$(window).scroll(function(){
 
-//     if($(window).scrollTop() > 200)
-//     {
-//         $('.navbar').css({'backgroundColor' : 'rgba(0, 0, 0, 0.85)', 'transition' : '0.5s'});
-//         $('.navbar-collapse').css({'backgroundColor' : 'transparent', 'transition' : '0.5s'});
-//     }
-//     else
-//     {
-//         $('.navbar').css({'backgroundColor' : 'transparent', 'transition' : '0.5s'});
-//         $('.navbar-collapse').css({'backgroundColor' : 'rgba(0, 0, 0, 0.85)', 'transition' : '0.5s'});
-//     }
+    let whyOffset = $('#why').offset().top;
+    let pricingOffset = $('#pricing').offset().top;
 
-//     if($(window).scrollTop() > whyOffset && $(window).scrollTop() < contactOffset-250)
-//     {
-//         $('#topBtn').fadeIn(500);
-//     }
-//     else
-//     {
-//         $('#topBtn').fadeOut(250);
-//     }
-// })
+    if($(window).scrollTop() > whyOffset && $(window).scrollTop() < pricingOffset)
+    {
+        $('#topBtn').fadeIn(500);
+    }
+    else
+    {
+        $('#topBtn').fadeOut(250);
+    }
+})
+
+// change toggle navbar style
 
 $('.navbar .navbar-toggler').click(()=>{
     $('.navbar .navbar-toggler').toggleClass('convert');
@@ -116,4 +111,107 @@ $(window).scroll(function(){
         started = true;
     }
 })
+
+
+
+
+// let divs =Array.from(document.querySelectorAll('.numbers .col-lg-4'));
+// let show = document.getElementById('show')
+// // console.log(divs);
+
+// for(let div of divs){
+//     div.addEventListener('click' , ()=>{
+//         let x = div.innerHTML;
+//         console.log(x);
+//         show.innerHTML = x;
+//     })
+// }
+// export let data ;
+// console.log(data);
+// export let head ;
+
+let prices = Array.from(document.querySelectorAll('.price'))
+export let data = prices.forEach((price) => {
+    price.addEventListener('click' , function (){
+        let data = $(this).html();
+        console.log(data);
+        console.log('hhhhhhh');
+        setTimeout(() => {
+            $(location).prop('href', 'check.html');
+        }, 2000);
+        return data;
+        
+        // console.log($('this .cont-pricing').html());
+    })
+})
+    
+
+// let names = Array.from(document.querySelectorAll('.price .name'))
+// names.forEach((name) => {
+//     name.addEventListener('click' , function(){
+//         head = name.innerHTML;
+//         console.log(name);
+//     })
+// })
+
+// let divs = Array.from(document.querySelectorAll('.price .cont-pricing'));
+// divs.forEach((div) => {
+//     div.addEventListener('click' , function(){
+//         data = div.innerHTML;
+//         console.log(data);
+//         // $(location).prop('href', 'check.html');
+//     })
+// });
+
+
+
+
+// for email subscribe
+
+$('#subscribe').click(()=>{
+    if(checkEmail == true){
+        $('#alertSubscribe').html('Successfully Subscribe');
+        $('#alertSubscribe').addClass('text-success');
+        $('#alertSubscribe').removeClass('text-danger');
+    }
+    else {
+        $('#alertSubscribe').html('You should fill it correctly to subscribe');
+        $('#alertSubscribe').addClass('text-danger');
+        $('#alertSubscribe').removeClass('text-success');
+    }
+})
+
+
+let checkEmail;
+function validUserEmailSubscribe(){
+    let regexEmail = /^[a-zA-Z0-9_]{3,15}(@gmail\.com)$/;
+    checkEmail = regexEmail.test($('#emailSubscribe').val());
+    if(checkEmail == true)
+    {
+        $('#emailSubscribe').addClass('is-valid');
+        $('#emailSubscribe').removeClass('is-invalid');
+        $('#alertEmailSubscibe').css('display' , 'none');
+    }
+    else
+    {
+        $('#emailSubscribe').addClass('is-invalid');
+        $('#emailSubscribe').removeClass('is-valid');
+        $('#alertEmailSubscibe').css('display' , 'block');
+    }
+}
+
+$('#emailSubscribe').on('input' , function(){
+    validUserEmailSubscribe();
+})
+
+
+
+
+
+
+
+
+
+
+
 
