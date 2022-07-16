@@ -1168,11 +1168,61 @@ option{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
 }
 .radio-input{
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(147, 147, 147, 0.6);
+    display: inline-flex;
+    vertical-align: middle;
+    height: 75px !important;
+    width: 250px !important;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer !important;
+    margin-top: 15px;
+}
+.radio-input + .radio-input{
+    margin-left: 10px;
+}
+.radio-input input[type='radio']{
+    display: none;
+}
+.radio-input label{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+}
+.radio-input label::before{
+    content: '';
+    height: 18px;
+    width: 18px;
+    border: 2px solid #6F6F6F;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.radio-input label::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    transition: all 0.3s;
+}
+.radio-input input[type='radio']:checked ~ label::before{
+    border: 2px solid var(--mainColor);
+}
+.radio-input input[type='radio']:checked ~ label::after{
+    transform: translate(-50% , -50%) scale(1);
 }
 .inputs-radio img{
     width: 40px;
@@ -1190,7 +1240,7 @@ option{
     border: 2px solid var(--mainColor) !important;
 }
 .number-card img{
-    width: 30px;
+    width: 40px;
     height: 30px;
     position: absolute;
     top: 50%;
@@ -1231,6 +1281,8 @@ option{
     color: #fff;
 }
 
+/* Responsive checkout page */
+
 @media screen and (max-width: 768px){
     .inputs-radio{
         flex-direction: column;
@@ -1245,6 +1297,9 @@ option{
         width: 85%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .radio-input + .radio-input{
+        margin-left: 0;
     }
 }
 
