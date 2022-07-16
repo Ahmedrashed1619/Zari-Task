@@ -1,12 +1,12 @@
 
 // loading to init...........
 
-// $(document).ready(function(){
-//     $('#ready').fadeOut(2500, function(){
-//         $('body').css('overflow','visible')
-//     })
-// })
-
+$(document).ready(function(){
+    $('#ready').fadeOut(3000, function(){
+        $('body').css('overflow','visible');
+        $('#topBtn').css('display' , 'none')
+    })
+})
 
 
 // when click event on topbtn & toggle 
@@ -113,60 +113,7 @@ $(window).scroll(function(){
 })
 
 
-
-
-// let divs =Array.from(document.querySelectorAll('.numbers .col-lg-4'));
-// let show = document.getElementById('show')
-// // console.log(divs);
-
-// for(let div of divs){
-//     div.addEventListener('click' , ()=>{
-//         let x = div.innerHTML;
-//         console.log(x);
-//         show.innerHTML = x;
-//     })
-// }
-// export let data ;
-// console.log(data);
-// export let head ;
-
-let prices = Array.from(document.querySelectorAll('.price'))
-export let data = prices.forEach((price) => {
-    price.addEventListener('click' , function (){
-        let data = $(this).html();
-        console.log(data);
-        console.log('hhhhhhh');
-        setTimeout(() => {
-            $(location).prop('href', 'check.html');
-        }, 2000);
-        return data;
-        
-        // console.log($('this .cont-pricing').html());
-    })
-})
-    
-
-// let names = Array.from(document.querySelectorAll('.price .name'))
-// names.forEach((name) => {
-//     name.addEventListener('click' , function(){
-//         head = name.innerHTML;
-//         console.log(name);
-//     })
-// })
-
-// let divs = Array.from(document.querySelectorAll('.price .cont-pricing'));
-// divs.forEach((div) => {
-//     div.addEventListener('click' , function(){
-//         data = div.innerHTML;
-//         console.log(data);
-//         // $(location).prop('href', 'check.html');
-//     })
-// });
-
-
-
-
-// for email subscribe
+// for email subscribe in footer section
 
 $('#subscribe').click(()=>{
     if(checkEmail == true){

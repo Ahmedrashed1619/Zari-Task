@@ -1,4 +1,13 @@
 
+// loading to init...........
+
+$(document).ready(function(){
+    $('#ready').fadeOut(2000, function(){
+        $('body').css('overflow','visible')
+    })
+})
+
+
 // for checkOut page 
 
 let checkNameCard;
@@ -113,6 +122,8 @@ function validConfirm(){
 }
 
 
+// to change img card 
+
 let radios = Array.from(document.querySelectorAll('.inputs-radio .radio-input input'));
 let imgRadio = document.querySelector('.number-card img');
 
@@ -161,14 +172,4 @@ currency.addEventListener('click' , function(){
         img.setAttribute('src' , 'imgs/navbar/Flag_of_Europe.svg.png');
     };
 })
-
-
-import { data } from "./main.js";
-
-let showData = document.getElementById('.check-out .price');
-
-showData.innerHTML = data;
-
-
-
 

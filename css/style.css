@@ -6,26 +6,25 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #F5F5F5;
-        /* overflow: hidden; */
+    overflow: hidden;
 }
 
-/* #ready{
+#ready{
     text-align: center;
-    z-index: 999;
+    z-index: 99999;
     position: fixed;
     inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    color: #fff;
-    font-weight: bold;
+    color: var(--mainColor);
     background-color: #000;
-} */
+}
 
 #topBtn{
     cursor: pointer;
     z-index: 99999;
+    display: none;
 }
 
 a{
@@ -1215,7 +1214,7 @@ option{
     border-color: #000 !important;
 }
 .check-out .price .salary{
-    margin-bottom: 0.5rem !important;
+    margin-bottom: 1rem !important;
 }
 .check-out .price a{
     width: 50%;
@@ -1241,6 +1240,11 @@ option{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .caption-check{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 

@@ -18,6 +18,9 @@
 
     <body>
 
+        <div id="ready">
+            <i class="fa fa-spinner fa-5x fa-spin"></i>
+        </div>
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg fixed-top bg-white p-0">
             <div class="container-fluid container-xl w-special-95 d-flex justify-content-between align-items-center">
@@ -86,8 +89,8 @@
             </div>
         </nav>
 
-        <section class="check-out py-5 d-flex justify-content-center align-items-center ">
-            <div class="container pt-5">
+        <section class="check-out py-5 vh-100">
+            <div class="container py-4">
                 <div class="row gy-5">
                     <div class="col-lg-8">
                         <div class="caption-check">
@@ -142,7 +145,7 @@
                         <div class="price">
                             <h4 class="name">Your Plan is <span id="nameChoose">Experience Plan</span></h4>
                             <div id="pricing-show" class="cont-pricing">
-                                <h6 class="salary"><span class="fs-1 main-color">55 $</span> /Month or 549 $ /Year</h6>
+                                <h6 class="salary text-white"><span class="fs-1 main-color">55 $</span> /Month or 549 $ /Year</h6>
                                 <h4><span class="main-color">Unlimited</span> card design</h4>
                                 <h4><span class="main-color">Unlimited</span> Location</h4>
                                 <h4><span class="main-color">Unlimited</span> Subusers</h4>
@@ -162,7 +165,7 @@
         <!-- js files -->
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery-3.6.0.min.js"></script>
-        <script type="module" src="js/check.js"></script>
+        <script src="js/check.js"></script>
 
     </body>
 </html>
