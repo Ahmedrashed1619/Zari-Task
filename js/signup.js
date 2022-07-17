@@ -1,4 +1,12 @@
 
+// loading to init...........
+
+$(document).ready(function(){
+    $('#ready').fadeOut(2000, function(){
+        $('body').css('overflow','visible');
+    })
+})
+
 
 // validation ...
 
